@@ -1,0 +1,29 @@
+html,
+body {
+    overflow-x: hidden
+}
+
+html body .content {
+    padding: 2% !important;
+}
+
+@media (max-width: 767px) {
+
+    .content {
+        overflow: hidden;
+    }
+
+}
+
+@media (min-width: 768px) {
+
+    .content {
+        height: 100%;
+        overflow: auto;
+    }
+
+    .panel-left {
+        overflow: hidden;
+    }
+
+}

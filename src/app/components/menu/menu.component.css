@@ -1,0 +1,51 @@
+.btn-linkedin {
+    color: #fff;
+    background-color: #007bb6;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.btn-linkedin:hover {
+    color: #fff;
+    background-color: #005983;
+    border-color: rgba(0,0,0,0.2);
+}
+
+.btn-github{
+    color:#fff;
+    background-color:#444;
+    border-color:rgba(0,0,0,0.2)
+}
+.btn-github:hover{
+    color:#fff;
+    background-color:#303030;
+    border-color:rgba(0,0,0,0.2)
+}
+
+@media (max-width: 768px){
+    .social-block{
+        padding: 0px;
+    }
+}
+
+
+.nav-item:hover {
+    background: #FFF;
+}
+
+.nav-item:hover .nav-link {
+    color: #000;
+}
+
+.nav-link {
+    color: #FFF;
+    font-size: 18px;
+}
+
+.active .nav-link {
+    background: #FFF;
+    color: #000;
+}
+
+.active .nav-link.border-menu {
+    border-left: 10px solid #007bff;
+}

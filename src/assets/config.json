@@ -1,0 +1,24 @@
+{
+    "data": {
+        "imgProfile": "./assets/img/fotoCV.jpeg",
+        "name": "Miguel Calvo Ruiz",
+        "socialNetworks": [
+            {
+                "name": "Linkedin",
+                "icon": "linkedin",
+                "link": "https://www.linkedin.com/in/miguel-calvo-ruiz-4b0672187/"
+            },
+            {
+                "name": "Github",
+                "icon": "github",
+                "link": "https://github.com/miguelcalvoruiz"
+            }
+        ],
+        "config": {
+            "showSkills": true,
+            "showContact": true,
+            "showProjects": true,
+            "filenameCV": "CV-Miguel-Calvo-Ruiz.pdf"
+        }
+    }
+}
