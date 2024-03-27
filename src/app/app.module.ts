@@ -24,6 +24,7 @@ import { CoursesComponent } from './components/information/courses/courses.compo
 import { ExperiencesComponent } from './components/information/experiences/experiences.component';
 import { LanguagesComponent } from './components/information/languages/languages.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { SanitizePipe } from './pipes/sanitize.pipe';
 
 export function translateFactory(provider: TranslateService) {
   return () => provider.getData();
@@ -48,7 +49,8 @@ export function translateFactory(provider: TranslateService) {
     StudiesComponent,
     CoursesComponent,
     ExperiencesComponent,
-    LanguagesComponent 
+    LanguagesComponent,
+    SanitizePipe 
   ],
   imports: [
     BrowserModule,

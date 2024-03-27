@@ -1,1 +1,7 @@
-<p>home works!</p>
+<div id="home" class="welcome-section">
+    <div *ngIf="load" [innerHTML]="content | sanitize"></div>
+    <a *ngIf="load" routerLink="/contact" class="cta-button">¡Contáctame!</a>
+    <div class="loading-spinner" *ngIf="!load">
+        <img src="./assets/img/spinner.gif" alt="Loading Spinner" />
+    </div>
+</div>
