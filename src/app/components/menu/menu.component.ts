@@ -43,7 +43,7 @@ export class MenuComponent implements OnInit {
   }
 
   async downloadCV() {
-    const filenameCV = await this.configService.getConfigValue('config.filenameCV');
+    const filenameCV = await this.configService.getConfigValue('data.config.filenameCV');
     this.dataService.downloadFile('assets/pdf/cv.pdf').subscribe(blob => {
       importedSaveAs(blob, filenameCV);
     });

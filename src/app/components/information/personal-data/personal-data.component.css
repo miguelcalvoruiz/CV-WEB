@@ -1,0 +1,23 @@
+.field-header,
+.value-header {
+    width: 50%;
+    text-align: justify;
+    padding-left: 15px;
+}
+
+
+.column-display {
+    font-weight: bold;
+    color: #333;
+}
+
+.column-value {
+    font-weight: bold;
+}
+
+::ng-deep .p-datatable thead>tr>th,
+::ng-deep .p-datatable tfoot>tr>td,
+::ng-deep .p-datatable tfoot>tr>th,
+::ng-deep .p-datatable thead>tr>td {
+    padding: 0.25rem;
+}

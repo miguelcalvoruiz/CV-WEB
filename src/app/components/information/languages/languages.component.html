@@ -1,0 +1,31 @@
+<div class="row" *ngIf="languages">
+    <div class="col-12">
+        <p-table [value]="languages" [rowHover]="true">
+        
+            <ng-template pTemplate="header">
+                <tr>
+                    <th class="headers">{{'label.language' | translate}}</th>
+                    <th class="headers">{{'label.level' | translate}}</th>
+                    <th class="headers">{{'label.experience' | translate}}</th>
+                </tr>
+            </ng-template>
+            
+            <ng-template pTemplate="body" let-ln>
+                <tr class="p-selectable-row">
+                    <td>
+                        <span class="font-weight-bold p-column-title">{{'label.field' | translate}}</span>
+                        <span class="column-language">{{ln.name | translate}}</span>
+                    </td>
+                    <td>
+                        <span class="font-weight-bold p-column-title">{{'label.value' | translate}}</span>
+                        <span class="column-level">{{ln.level | translate}}</span>
+                    </td>
+                    <td>
+                        <span class="font-weight-bold p-column-title">{{'label.value' | translate}}</span>
+                        <span class="column-experience">{{ln.experience | translate}}</span>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+.tabs__title {
+    text-align: center;
+    font-size: 18px;
+    padding: 15px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.tabs__title--selected {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+.tabs__content {
+    padding: 10px;
+}

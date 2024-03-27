@@ -14,6 +14,7 @@ export class TranslatePipe implements PipeTransform {
    * @returns El valor traducido o una cadena vacía si no se encuentra la traducción.
    */
   transform(value: any): any {
-    return this.translateService.getTranslate(value) ? this.translateService.getTranslate(value) : '';
+    const translation = this.translateService.getTranslate(value);
+    return translation !== undefined ? translation : value;
   }
 }

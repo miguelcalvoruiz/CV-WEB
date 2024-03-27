@@ -1,1 +1,24 @@
-<p>information works!</p>
+<div class="row">
+    <div class="col-12">
+  
+        <app-tabs class="text-center">
+            <app-tab-item [title]="'label.information.data' | translate">          
+                <app-personal-data></app-personal-data>
+            </app-tab-item>
+            <app-tab-item [title]="'label.information.studies' | translate">
+                <app-studies></app-studies>
+            </app-tab-item>
+            <app-tab-item [title]="'label.information.experience' | translate">
+                <app-experiences></app-experiences>
+            </app-tab-item>
+            <app-tab-item [title]="'label.information.courses' | translate">
+              <app-courses></app-courses>
+            </app-tab-item>
+            <app-tab-item [title]="'label.information.languages' | translate">
+              <app-languages></app-languages>
+          </app-tab-item>
+        </app-tabs>  
+    </div>
+  </div>
+  
+  

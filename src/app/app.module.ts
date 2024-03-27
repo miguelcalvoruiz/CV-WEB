@@ -15,6 +15,15 @@ import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DetailComponent } from './components/shared/detail/detail.component';
 import { ToastComponent } from './components/shared/toast/toast.component';
+import { TabsComponent } from './components/shared/tabs/tabs.component';
+import { TabItemComponent } from './components/shared/tabs/tab-item/tab-item.component';
+import { PersonalDataComponent } from './components/information/personal-data/personal-data.component';
+import { TableModule } from 'primeng/table';
+import { StudiesComponent } from './components/information/studies/studies.component';
+import { CoursesComponent } from './components/information/courses/courses.component';
+import { ExperiencesComponent } from './components/information/experiences/experiences.component';
+import { LanguagesComponent } from './components/information/languages/languages.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export function translateFactory(provider: TranslateService) {
   return () => provider.getData();
@@ -32,12 +41,21 @@ export function translateFactory(provider: TranslateService) {
     ProjectsComponent,
     ContactComponent,
     DetailComponent,
-    ToastComponent
+    ToastComponent,
+    TabsComponent,
+    TabItemComponent,
+    PersonalDataComponent,
+    StudiesComponent,
+    CoursesComponent,
+    ExperiencesComponent,
+    LanguagesComponent 
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    TableModule,
+    NgbModule
   ],
   providers: [
     provideClientHydration(),

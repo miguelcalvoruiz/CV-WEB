@@ -14,6 +14,137 @@
                 "link": "https://github.com/miguelcalvoruiz"
             }
         ],
+        "personalData": [
+            {
+                "columnDisplay": "label.information.data.name",
+                "columnValue": "Miguel"
+            },
+            {
+                "columnDisplay": "label.information.data.surname",
+                "columnValue": "Calvo Ruiz"
+            },
+            {
+                "columnDisplay": "label.information.data.birthdate",
+                "columnValue": "28/12/1998"
+            },
+            {
+                "columnDisplay": "label.information.data.email",
+                "columnValue": "miguelcalvoruiz6@gmail.com"
+            },
+            {
+                "columnDisplay": "label.information.data.nationality",
+                "columnValue": "label.information.data.nationality.value"
+            },
+            {
+                "columnDisplay": "label.information.data.type.carnet",
+                "columnValue": "label.information.data.type.carnet.value"
+            },
+            {
+                "columnDisplay": "label.information.data.own.vehicule",
+                "columnValue": "label.yes"
+            },
+            {
+                "columnDisplay": "label.information.data.availability.travel",
+                "columnValue": "label.yes"
+            }
+        ],
+        "studies": [
+            {
+                "range": "2016-2018",
+                "place": "Universidad de Oviedo",
+                "title": "Ingeniería Informática en Tecnologías de la Información"
+            },
+            {
+                "range": "2018-2020",
+                "place": "IES Juan Jose Calvo Miguel",
+                "title": "Técnico en desarrollo de aplicaciones multiplataforma (DAM)"
+            }
+        ],
+        "courses": [
+            {
+                "year": "2023",
+                "name": "Desarrollando Aplicaciones en Angular 12 y ASP.NET Core 5",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2023",
+                "name": "Curso de AngularJS",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2023",
+                "name": "Curso completo programación C# en .Net",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2022",
+                "name": "Angular: Pruebas unitarias con Jasmine y Karma",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2022",
+                "name": "Conceptos básicos Marketing Digital",
+                "place": "Google Garage Digital",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2020",
+                "name": "Desarrollo de Videojuegos 2D en Unity 3D 5",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2020",
+                "name": "Angular 8+ con 10 proyectos completo",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2020",
+                "name": "Máster en Seguridad Informática. De 0 a Experto",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2020",
+                "name": "Hacking Ético desde Cero",
+                "place": "Udemy",
+                "type": "label.information.courses.type.online"
+            },
+            {
+                "year": "2020",
+                "name": "Master en Python 3.x. Aprende de 0 a EXPERTO con Práctica",
+                "place": "Itoo",
+                "type": "label.information.courses.type.online"
+            }
+        ],
+        "experiences": [
+            {
+                "start": "10/2020",
+                "end": "01/2023",
+                "company": "Clarcat",
+                "model": "label.information.experiences.hybrid",
+                "place": "Asturias",
+                "position": "label.information.experiences.front.end.programmer",
+                "description": "label.information.experiences.clarcat.task",
+                "id": 1
+            }
+        ],
+        "languages": [
+            {
+                "name": "label.information.languages.spanish",
+                "level": "label.information.languages.level.native"
+            },
+            {
+                "name": "label.information.languages.english",
+                "level": "label.information.languages.level.intermediate",
+                "experience": "label.information.languages.experience.english"
+            }
+        ],
         "config": {
             "showSkills": true,
             "showContact": true,

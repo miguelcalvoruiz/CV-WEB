@@ -1,0 +1,10 @@
+<div class="tabs">
+    <div *ngFor="let tab of tabsItems" class="tabs__title" (click)="open(tab)"
+        [ngClass]="{'tabs__title--selected': tab.selected}">
+        <span>{{tab.title}}</span>
+    </div>
+
+    <div class="tabs_content" *ngIf="contentTemplate">
+        <ng-template *ngTemplateOutlet="contentTemplate"></ng-template>
+    </div>
+</div>
