@@ -35,7 +35,7 @@
                     </td>
                     <td>
                         <span class="font-weight-bold p-column-title">{{'label.tasks' | translate}}</span>
-                        <button type="button" class="btn btn-primary" (click)="openModal(exp.description, exp.company, taskModal)">
+                        <button type="button" class="btn btn-dark" (click)="openModal(exp.description, exp.company, taskModal)">
                             {{ 'label.information.experiences.task' | translate }}
                           </button>                          
                     </td>                    
@@ -55,7 +55,7 @@
         <p [innerHTML]="selectedDescription | translate"></p>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" (click)="closeModal()">
+        <button type="button" class="btn btn-danger" (click)="closeModal()">
             {{ 'label.close' | translate }}
         </button>
       </div>

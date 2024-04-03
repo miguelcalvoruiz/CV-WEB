@@ -5,6 +5,7 @@
     "label.menu.contact": "Contacto",
     "label.menu.projects": "Proyectos",
     "label.menu.download.cv": "Descargar CV",
+    "label.home.contact": "¡Contáctame!",
     "label.information.data": "Datos personales",
     "label.information.studies": "Estudios",
     "label.information.experience": "Experiencia",
@@ -33,6 +34,15 @@
     "label.information.languages.level.native": "Nativo",
     "label.information.languages.level.intermediate": "Intermedio",
     "label.information.languages.experience.english": "He trabajado con clientes extranjeros manteniendo reuniones semanales con ellos",
+    "label.skills.level": "Nivel: ",
+    "label.skills.all": "Todas",
+    "label.skills.data-base": "Base de Datos",
+    "label.skills.frameworks": "Frameworks",
+    "label.skills.methodology": "Metodologías",
+    "label.skills.programming-languages": "Lenguajes",
+    "label.skills.style-library": "Bibliotecas de Estilos",
+    "label.skills.version-control": "Control de Versiones",
+    "label.skills.years.experience": "años de experiencia",
     "label.yes": "Si",
     "label.no": "No",
     "label.value": "Valor",
@@ -49,5 +59,7 @@
     "label.language": "Idioma",
     "label.level": "Nivel",
     "label.experience": "Experiencia",
-    "label.close": "Cerrar"
+    "label.close": "Cerrar",
+    "label.previous": "Anterior",
+    "label.next": "Siguiente"
 }

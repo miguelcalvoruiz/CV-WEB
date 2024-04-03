@@ -1,11 +1,12 @@
 #sidebar {
-    background: #000;
+    background: #ba627b;
     height: 100vh;
     z-index: 1;
 }
 
 .name {
-    font-size: 20px;
+    font-size: 30px;
+    font-family: math;
 }
 
 .icon-mobile {
@@ -28,7 +29,7 @@
 
 @media (min-width: 576px) and (orientation: landscape) {
     .profile {
-        width: 55px;
-        height: 55px;
+        width: 155px;
+        height: 155px;
     }
 }

@@ -145,6 +145,120 @@
                 "experience": "label.information.languages.experience.english"
             }
         ],
+        "skills": [
+            {
+                "name": "Typescript",
+                "years": "5",
+                "level": "8",
+                "thumbnail": "assets/img/skills/typescript.jpg",
+                "group": "programming-languages"
+            },
+            {
+                "name": "HTML",
+                "years": "6",
+                "level": "8",
+                "thumbnail": "assets/img/skills/html.jpg",
+                "group": "programming-languages"
+            },
+            {
+                "name": "CSS",
+                "years": "6",
+                "level": "8",
+                "thumbnail": "assets/img/skills/css.jpg",
+                "group": "programming-languages"
+            },
+            {
+                "name": "JavaScript",
+                "years": "1",
+                "level": "5",
+                "thumbnail": "assets/img/skills/javascript.jpg",
+                "group": "programming-languages"
+            },
+            {
+                "name": "ASP .NET Core",
+                "years": "3",
+                "level": "6",
+                "thumbnail": "assets/img/skills/asp.net-core.jpg",
+                "group": "programming-languages"
+            },
+            {
+                "name": "Java",
+                "years": "2",
+                "level": "6",
+                "thumbnail": "assets/img/skills/java.jpg",
+                "group": "programming-languages"
+            },
+            {
+                "name": "Python",
+                "years": "1",
+                "level": "5",
+                "thumbnail": "assets/img/skills/python.jpg",
+                "group": "programming-languages"
+            },
+            {
+                "name": "Angular",
+                "years": "5",
+                "level": "8",
+                "thumbnail": "assets/img/skills/angular.jpg",
+                "group": "frameworks"
+            },
+            {
+                "name": "Angular JS",
+                "years": "1",
+                "level": "6",
+                "thumbnail": "assets/img/skills/angularjs.jpg",
+                "group": "frameworks"
+            },
+            {
+                "name": "My SQL",
+                "years": "1",
+                "level": "6",
+                "thumbnail": "assets/img/skills/mysql.jpg",
+                "group": "data-base"
+            },
+            {
+                "name": "Bootstrap",
+                "years": "5",
+                "level": "7",
+                "thumbnail": "assets/img/skills/bootstrap.jpg",
+                "group": "style-library"
+            },
+            {
+                "name": "Angular Material",
+                "years": "5",
+                "level": "7",
+                "thumbnail": "assets/img/skills/angularmaterial.jpg",
+                "group": "style-library"
+            },
+            {
+                "name": "Font Awesome",
+                "years": "2",
+                "level": "7",
+                "thumbnail": "assets/img/skills/fontawesome.jpg",
+                "group": "style-library"
+            },
+            {
+                "name": "Prime NG",
+                "years": "2",
+                "level": "6",
+                "thumbnail": "assets/img/skills/primeng.jpg",
+                "group": "style-library"
+            },
+            {
+                "name": "Git",
+                "years": "5",
+                "level": "7",
+                "thumbnail": "assets/img/skills/git.jpg",
+                "group": "version-control"
+            },
+            {
+                "name": "Agile",
+                "years": "2",
+                "level": "7",
+                "thumbnail": "assets/img/skills/agile.jpg",
+                "group": "methodology"
+            }
+        ],
         "config": {
             "showSkills": true,
             "showContact": true,

@@ -14,24 +14,43 @@ export class TabsComponent implements AfterViewInit {
   constructor(private cdr: ChangeDetectorRef) { }
 
   ngAfterViewInit(): void {
-    let selectedIndex = parseInt(localStorage.getItem('selectedTabIndex') || '0', 10);
-    if (isNaN(selectedIndex) || selectedIndex >= this.tabsItems.length) {
-      selectedIndex = 0;
-    }
+    if (typeof localStorage !== 'undefined' && localStorage !== null) {
+      let selectedIndex = parseInt(localStorage.getItem('selectedTabIndex') || '0', 10);
+      if (isNaN(selectedIndex) || selectedIndex >= this.tabsItems.length) {
+        selectedIndex = 0;
+      }
 
-    const selectedTab = this.tabsItems.toArray()[selectedIndex];
-    this.open(selectedTab);
-    this.cdr.detectChanges();
-  }
+      const selectedTab = this.tabsItems.toArray()[selectedIndex];
+      if (!selectedTab) {
+        this.open(this.tabsItems.first);
+      } else {
+        this.open(selectedTab);
+      }
+
+      this.cdr.detectChanges();
+    } else {
+      this.openFirstTab();
+    }
+  }  
 
   open(tab: TabItemComponent): void {
-    this.tabsItems.forEach(t => t.selected = false);
-    tab.selected = true;
-    this.contentTemplate = tab.contentTemplate;
+    if (tab) {
+      this.tabsItems.forEach(t => t.selected = false);
+      tab.selected = true;
+      this.contentTemplate = tab.contentTemplate;
 
-    const selectedIndex = this.tabsItems.toArray().findIndex(t => t.selected);
-    localStorage.setItem('selectedTabIndex', selectedIndex.toString());
+      const selectedIndex = this.tabsItems.toArray().findIndex(t => t.selected);
+      if (typeof localStorage !== 'undefined' && localStorage !== null) {
+        localStorage.setItem('selectedTabIndex', selectedIndex.toString());
+      }
 
-    this.cdr.detectChanges();
+      this.cdr.detectChanges();
+    }
   }
+
+  openFirstTab(): void {
+    if (this.tabsItems && this.tabsItems.first) {
+      this.open(this.tabsItems.first);
+    }
+  }  
 }

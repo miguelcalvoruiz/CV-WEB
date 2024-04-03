@@ -5,6 +5,7 @@
     "label.menu.contact": "Contact",
     "label.menu.projects": "Projects",
     "label.menu.download.cv": "Download CV",
+    "label.home.contact": "Contact me!",
     "label.information.data": "Personal Data",
     "label.information.studies": "Studies",
     "label.information.experience": "Experience",
@@ -33,6 +34,15 @@
     "label.information.languages.level.native": "Native",
     "label.information.languages.level.intermediate": "Intermediate",
     "label.information.languages.experience.english": "I have worked with foreign clients, holding weekly meetings with them.",
+    "label.skills.level": "Level: ",
+    "label.skills.all": "All",
+    "label.skills.data-base": "Databases",
+    "label.skills.frameworks": "Frameworks",
+    "label.skills.methodology": "Methodologies",
+    "label.skills.programming-languages": "Programming Languages",
+    "label.skills.style-library": "Style Libraries",
+    "label.skills.version-control": "Version Control",
+    "label.skills.years.experience": "years of experience",
     "label.yes": "Yes",
     "label.no": "No",
     "label.value": "Value",
@@ -49,5 +59,7 @@
     "label.language": "Language",
     "label.level": "Level",
     "label.experience": "Experience",
-    "label.close": "Close"
+    "label.close": "Close",
+    "label.previous": "Previous",
+    "label.next": "Next"
 }

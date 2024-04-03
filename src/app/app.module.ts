@@ -25,6 +25,7 @@ import { ExperiencesComponent } from './components/information/experiences/exper
 import { LanguagesComponent } from './components/information/languages/languages.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SanitizePipe } from './pipes/sanitize.pipe';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 export function translateFactory(provider: TranslateService) {
   return () => provider.getData();
@@ -57,7 +58,8 @@ export function translateFactory(provider: TranslateService) {
     AppRoutingModule,
     HttpClientModule,
     TableModule,
-    NgbModule
+    NgbModule,
+    NgxPaginationModule
   ],
   providers: [
     provideClientHydration(),

@@ -4,7 +4,7 @@
         <span>{{tab.title}}</span>
     </div>
 
-    <div class="tabs_content" *ngIf="contentTemplate">
+    <div class="tabs_content" style="margin-top: 15px; padding: 10px;" *ngIf="contentTemplate">
         <ng-template *ngTemplateOutlet="contentTemplate"></ng-template>
     </div>
 </div>

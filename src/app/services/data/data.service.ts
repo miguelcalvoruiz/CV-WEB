@@ -17,9 +17,6 @@ export class DataService {
     }
 
     let url = './assets/home/home-' + language + '.html';
-    console.log(url);
-    
-
     return this.http.get(url, { responseType: 'text' });
   }
 

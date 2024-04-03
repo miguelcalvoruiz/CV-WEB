@@ -28,12 +28,12 @@
 }
 
 
-.nav-item:hover {
+.item-menu:hover {
     background: #FFF;
 }
 
 .nav-item:hover .nav-link {
-    color: #000;
+    color: #38013b;
 }
 
 .nav-link {
@@ -47,5 +47,5 @@
 }
 
 .active .nav-link.border-menu {
-    border-left: 10px solid #007bff;
+    border-left: 10px solid #38013b;
 }
