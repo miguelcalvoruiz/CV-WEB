@@ -1,23 +1,18 @@
-<div class="container-fluid p-0 h-100 theme-default">
-  <div class="row no-gutters h-100">
-    <div class="col-lg-2 col-md-2 col-sm-12 col-12">
-      <app-sidebar></app-sidebar>
-    </div>
-    <div class="col-lg-10 col-md-10 col-sm-12 col-12 h-100 panel-left">
-      <div class="row no-gutters h-100">
-        <div class="content col-12">
-          <router-outlet></router-outlet>
+<div class="container-fluid p-0 min-vh-100 d-flex flex-column">
+    <div class="row no-gutters flex-grow-1">
+        <div class="col-lg-2 col-md-2 col-sm-12 col-12">
+            <app-sidebar></app-sidebar>
         </div>
-      </div>
+        <div class="col-lg-10 col-md-10 col-sm-12 col-12 h-100 panel-left">
+            <div class="row no-gutters h-100">
+                <div class="content col-12">
+                    <router-outlet></router-outlet>
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
-  <app-detail *ngIf="cacheService.getElement('showDetail')" (close)="closeDetail()">
-
-    <h5 class="text-center pt-3" detail-title>{{ name }}</h5>
-
-    <app-menu [showBorder]="false" (clickItemMenu)="closeDetail()" detail-content></app-menu>
-
-  </app-detail>
+    <app-detail *ngIf="cacheService.getElement('showDetail')" (close)="closeDetail()">
+        <h5 class="text-center pt-3" detail-title>{{ name }}</h5>
+        <app-menu [showBorder]="false" (clickItemMenu)="closeDetail()" detail-content></app-menu>
+    </app-detail>
 </div>
-
-<app-toast></app-toast>

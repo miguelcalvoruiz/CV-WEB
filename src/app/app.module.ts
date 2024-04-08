@@ -14,7 +14,6 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { DetailComponent } from './components/shared/detail/detail.component';
-import { ToastComponent } from './components/shared/toast/toast.component';
 import { TabsComponent } from './components/shared/tabs/tabs.component';
 import { TabItemComponent } from './components/shared/tabs/tab-item/tab-item.component';
 import { PersonalDataComponent } from './components/information/personal-data/personal-data.component';
@@ -26,6 +25,8 @@ import { LanguagesComponent } from './components/information/languages/languages
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { SanitizePipe } from './pipes/sanitize.pipe';
 import { NgxPaginationModule } from 'ngx-pagination';
+import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 export function translateFactory(provider: TranslateService) {
   return () => provider.getData();
@@ -43,7 +44,6 @@ export function translateFactory(provider: TranslateService) {
     ProjectsComponent,
     ContactComponent,
     DetailComponent,
-    ToastComponent,
     TabsComponent,
     TabItemComponent,
     PersonalDataComponent,
@@ -55,11 +55,13 @@ export function translateFactory(provider: TranslateService) {
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     AppRoutingModule,
     HttpClientModule,
     TableModule,
     NgbModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    FormsModule
   ],
   providers: [
     provideClientHydration(),
