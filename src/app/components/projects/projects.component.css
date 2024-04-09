@@ -1,0 +1,41 @@
+#projects {
+    position: relative;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+#projects p {
+    margin: 0;
+}
+
+.card {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.card-image-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    margin-bottom: 20px;
+}
+
+.card-footer {
+    border-top: 1px solid #ccc;
+    padding: 15px 20px;
+}
+
+.pagination-footer {
+    font-size: 20px;
+}

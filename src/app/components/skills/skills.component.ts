@@ -39,7 +39,6 @@ export class SkillsComponent implements OnInit {
       this.skills['all'] = allSkillsChunked;
       this.currentPage['all'] = 0;
 
-      // Retrasar la llamada a openFirstTab() para asegurarse de que ngAfterViewInit() haya terminado
       setTimeout(() => {
         if (this.tabsComponent) {
           this.tabsComponent.openFirstTab();
