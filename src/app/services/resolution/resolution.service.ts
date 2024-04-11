@@ -1,7 +1,6 @@
 import { Injectable } from '@angular/core';
 import { ResolutionConstants } from './constants/ResolutionConstants';
 
-
 @Injectable({
   providedIn: 'root'
 })
@@ -26,3 +25,4 @@ export class ResolutionService {
     }
   }
 }
+

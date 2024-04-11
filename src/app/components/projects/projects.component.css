@@ -11,6 +11,8 @@
 .card {
     border: 1px solid #ccc;
     border-radius: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .card-image-top {

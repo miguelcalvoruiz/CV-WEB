@@ -31,7 +31,6 @@ export class ExperiencesComponent {
   openModal(description: string, company: string, content: any) {
     this.selectedDescription = description;
     this.selectedCompany = company;
-    console.log("selected description: " + this.selectedDescription + " company: " + this.selectedCompany);
     this.modalRef = this.modalService.open(content, { centered: true });
   }
 

@@ -11,8 +11,10 @@
             </div>
         </div>
     </div>
-    <app-detail *ngIf="cacheService.getElement('showDetail')" (close)="closeDetail()">
-        <h5 class="text-center pt-3" detail-title>{{ name }}</h5>
-        <app-menu [showBorder]="false" (clickItemMenu)="closeDetail()" detail-content></app-menu>
-    </app-detail>
+    <div *ngIf="isMenuVisible">
+        <app-detail [showDetail]="isMenuVisible" (close)="closeMenu()">
+            <h5 class="text-center pt-3 detail-title" detail-title>{{ name }}</h5>
+            <app-menu [showBorder]="false"  (clickItemMenu)="closeMenu()" detail-content></app-menu>
+        </app-detail>
+    </div>
 </div>

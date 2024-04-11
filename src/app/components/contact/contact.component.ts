@@ -49,7 +49,6 @@ export class ContactComponent implements OnInit {
 
     emailjs.send(this.serviceID, this.templateID, formDataToSend, this.userID)
       .then((response: EmailJSResponseStatus) => {
-        console.log('Correo enviado exitosamente', response);
         form.resetForm();
         this.progress = 100;
         setTimeout(() => {

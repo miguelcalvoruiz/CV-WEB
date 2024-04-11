@@ -1,51 +1,88 @@
 .btn-linkedin {
-    color: #fff;
+    color: #FFFFFF;
     background-color: #007bb6;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
 .btn-linkedin:hover {
-    color: #fff;
+    color: #FFFFFF;
     background-color: #005983;
-    border-color: rgba(0,0,0,0.2);
+    border-color: rgba(0, 0, 0, 0.2);
 }
 
-.btn-github{
-    color:#fff;
-    background-color:#444;
-    border-color:rgba(0,0,0,0.2)
-}
-.btn-github:hover{
-    color:#fff;
-    background-color:#303030;
-    border-color:rgba(0,0,0,0.2)
+.btn-github {
+    color: #FFFFFF;
+    background-color: #34495E;
+    border-color: rgba(0, 0, 0, 0.2)
 }
 
-@media (max-width: 768px){
-    .social-block{
+.btn-github:hover {
+    color: #FFFFFF;
+    background-color: #2C3E50;
+    border-color: rgba(0, 0, 0, 0.2)
+}
+
+@media (max-width: 768px) {
+    .social-block {
         padding: 0px;
     }
 }
 
-
 .item-menu:hover {
-    background: #FFF;
+    background: #2C3E50;
 }
 
 .nav-item:hover .nav-link {
-    color: #38013b;
+    color: #FFFFFF;
 }
 
 .nav-link {
-    color: #FFF;
+    color: #FFFFFF;
     font-size: 18px;
 }
 
 .active .nav-link {
-    background: #FFF;
-    color: #000;
+    background: #2C3E50;
+    color: #FFFFFF;
 }
 
 .active .nav-link.border-menu {
-    border-left: 10px solid #38013b;
+    border-left: 10px solid #FFFFFF;
+}
+
+#sidebar {
+    background: #1E2749;
+    z-index: 1;
+    padding-top: 1rem;
+    color: #FFFFFF;
+}
+
+.name {
+    font-size: 30px;
+    font-family: math;
+}
+
+.icon-mobile {
+    font-size: 30px;
+}
+
+@media (max-width: 576px) {
+    .profile {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+@media (min-width: 576px) and (orientation: portrait) {
+    .profile {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media (min-width: 576px) and (orientation: landscape) {
+    .profile {
+        width: 155px;
+        height: 155px;
+    }
 }

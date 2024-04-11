@@ -19,7 +19,7 @@ export class HomeComponent {
       this.content = data;
       this.load = true;
     }, error => {
-      console.log(error);
+      console.error(error);
     });
   }
 }

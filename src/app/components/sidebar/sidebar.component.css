@@ -1,11 +1,12 @@
 #sidebar {
-    background: #ba627b;
+    background: #1E2749;
     z-index: 1;
-    padding-top: 1rem; /* Ajuste del padding superior para mantener el espacio */
+    padding-top: 1rem;
+    color: #FFFFFF;
 }
 
 .name {
-    font-size: 30px;
+    font-size: 29px;
     font-family: math;
 }
 
@@ -22,8 +23,9 @@
 
 @media (min-width: 576px) and (orientation: portrait) {
     .profile {
-        width: 140px;
-        height: 140px;
+        width: 100px;
+        height: 100px;
+        padding-bottom: 10px;
     }
 }
 

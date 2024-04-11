@@ -8,11 +8,11 @@ html body .content {
 }
 
 .container-fluid {
-    overflow-x: hidden; /* Evitar desbordamiento horizontal */
+    overflow-x: hidden;
 }
 
 .panel-left {
-    overflow-y: auto; /* Agregar desplazamiento vertical si es necesario */
+    overflow-y: auto;
 }
 
 #sidebar {
@@ -22,8 +22,11 @@ html body .content {
     z-index: 1;
 }
 
-/* Otros estilos... */
-
+.detail-title{
+    font-size: 30px;
+    color: white;
+    font-family: math;
+}
 
 @media (max-width: 767px) {
 
