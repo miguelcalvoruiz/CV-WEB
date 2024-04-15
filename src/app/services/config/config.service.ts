@@ -14,7 +14,7 @@ export class ConfigService {
 
   private async loadConfigData(): Promise<void> {
     try {
-      this.configData = await this.http.get('/assets/config.json').toPromise();
+      this.configData = await this.http.get('assets/config.json').toPromise();
     } catch (error) {
       console.error('Error loading configuration data:', error);
     }

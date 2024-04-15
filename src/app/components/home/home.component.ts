@@ -15,7 +15,7 @@ export class HomeComponent {
   ) { }
 
   ngOnInit() {
-    this.dataService.getHMTL().subscribe((data: string) => {
+    this.dataService.getHTML().subscribe((data: string) => {
       this.content = data;
       this.load = true;
     }, error => {
