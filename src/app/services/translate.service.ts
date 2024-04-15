@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, Inject, PLATFORM_ID } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Injectable({
   providedIn: 'root'
@@ -7,32 +8,33 @@ import { Injectable } from '@angular/core';
 export class TranslateService {
 
   private data: any;
+  private language: string;
 
-  constructor(private http: HttpClient) { }
+  constructor(
+    private http: HttpClient,
+    @Inject(PLATFORM_ID) private platformId: Object
+  ) {
+    if (isPlatformBrowser(this.platformId)) {
+      this.language = navigator.language || 'es';
+    } else {
+      this.language = 'es';
+    }
+  }
 
-  /**
-   * Obtiene los datos de traducción del archivo JSON correspondiente al idioma del navegador.
-   * @returns Promesa que se resuelve cuando se han cargado los datos de traducción correctamente.
-   * Rechaza la promesa si ocurre algún error en la carga de los datos.
-   */
   public getData() {
     return new Promise((resolve, reject) => {
-      this.http.get('assets/translations/' + navigator.language + '.json').subscribe(data => {
+      const languageCode = this.language.split('-')[0];
+      this.http.get(`assets/translations/${languageCode}.json`).subscribe(data => {
         this.data = data;
         resolve(true);
       }, error => {
-        console.error('Error al recuperar las traducciones: ' + error);
-        reject(true);
-      })
-    })
+        console.error('Error al recuperar las traducciones:', error);
+        reject(error);
+      });
+    });
   }
 
-  /**
-   * Obtiene la traducción correspondiente a una palabra o frase.
-   * @param word Palabra o frase a traducir.
-   * @returns Traducción correspondiente o una cadena vacía si no se encuentra la traducción.
-   */
-  public getTranslate(word: string){
-    return this.data[word];
+  public getTranslate(word: string) {
+    return this.data ? this.data[word] : '';
   }
 }
